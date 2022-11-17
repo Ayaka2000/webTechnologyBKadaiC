@@ -6,7 +6,7 @@
   </head>
   <body>
     <p id="ClockArea">
-      表示
+      時計が表示されるまでお待ちください……
     </p>
     <script>
       function Clock(){
@@ -14,7 +14,7 @@
 	  var nowHour = nowTime.getHours(); // 時を抜き出す
 	  var nowMin  = nowTime.getMinutes(); // 分を抜き出す
 	  var nowSec  = nowTime.getSeconds(); // 秒を抜き出す
-	  var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
+	  var msg = "現在時刻：" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
 	  document.getElementById("ClockArea").innerHTML = msg;
       }
       setInterval('Clock()',1000)
